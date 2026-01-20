@@ -347,7 +347,16 @@ University of Glasgow<br>ISBI 2026</span>
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Obtaining labelled ECG data for developing supervised models is challenging. 
+            Contrastive learning (CL) has emerged as a promising pretraining approach that enables effective transfer learning with limited labelled data.
+            However, existing CL frameworks either focus solely on global context or fail to exploit ECG-specific characteristics. 
+            Furthermore, these methods rely on hard contrastive targets, which may not adequately capture the continuous nature of feature similarity in ECG signals. 
+            In this paper, we propose Beat-SSL, a contrastive learning framework that performs dual-context learning through both rhythm-level and heartbeat-level contrasting with soft targets. 
+            We evaluated our pretrained model on two downstream tasks: 1) multilabel classification for global rhythm assessment, 
+            and 2) ECG segmentation to assess its capacity to learn representations across both contexts. 
+            We conducted an ablation study and compared the best configuration with three other methods, 
+            including one ECG foundation model. Despite the foundation model's broader pretraining, 
+            Beat-SSL reached 93% of its performance in multilabel classification task and surpassed all other methods in the segmentation task by 4%.
           </p>
         </div>
       </div>
@@ -364,31 +373,31 @@ University of Glasgow<br>ISBI 2026</span>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
+        <img src="static/images/ablation-study.png" alt="Ablation Study" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Ablation study.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
+        <img src="static/images/friedman_boxplot_PTB-10-F1.png" alt="Comparison on PTB-XL Dataset" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Comparison on PTB-XL superdiagnostic classification - F1-score
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
+        <img src="static/images/friedman_boxplot_LUDB-F1.png" alt="Comparison on LUDB segmentation - F1-score" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         Comparison on LUDB segmentation - F1-score
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
+      <img src="static/images/friedman_boxplot_LUDB-Dice.png" alt="Comparison on LUDB segmentation - Dice-score" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        FComparison on LUDB segmentation - Dice-score
       </h2>
     </div>
   </div>
@@ -397,62 +406,6 @@ University of Glasgow<br>ISBI 2026</span>
 </section>
 <!-- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
 
 
 
