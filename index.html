@@ -366,6 +366,34 @@ University of Glasgow<br>ISBI 2026</span>
 </section>
 <!-- End paper abstract -->
 
+<!-- Paper method -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Abstract</h2> -->
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <img src="static/images/beat-ssl_complete.png" alt="complete overview of the method">
+
+          <p>We propose an ECG CL framework that
+          considers both global and local context by leveraging the
+          heartbeat-level contrasting for local context representation.
+          First, we use the 12-lead ECG as input, which are transformed
+          into the 3D VCG domain and augment the signal using the
+          3KG strategy. Subsequently, we apply contrastive learning in both global and local contexts.
+          We introduce two soft contrastive strategies that utilised ECG feature similarity as
+          a continuous target between 0 and 1, moving beyond binary
+          positive-negative pairs. Finally, we validate the model on two
+          downstream tasks: multilabel classification for global context 
+          evaluation and ECG wave segmentation for local context evaluation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper method -->
+
 
 <!-- Image carousel -->
 <section class="hero is-small">
@@ -373,29 +401,24 @@ University of Glasgow<br>ISBI 2026</span>
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- TODO: Replace with your research result images -->
         <img src="static/images/ablation-study.png" alt="Ablation Study" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
           Ablation study.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/friedman_boxplot_PTB-10-F1.png" alt="Comparison on PTB-XL Dataset" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
           Comparison on PTB-XL superdiagnostic classification - F1-score
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/friedman_boxplot_LUDB-F1.png" alt="Comparison on LUDB segmentation - F1-score" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
          Comparison on LUDB segmentation - F1-score
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/friedman_boxplot_LUDB-Dice.png" alt="Comparison on LUDB segmentation - Dice-score" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
         FComparison on LUDB segmentation - Dice-score
@@ -414,24 +437,24 @@ University of Glasgow<br>ISBI 2026</span>
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title">Poster</h2> -->
 
       <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <!-- <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
           </iframe>
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
@@ -448,7 +471,7 @@ University of Glasgow<br>ISBI 2026</span>
   url={https://ilham1012.github.io/beat-ssl}
 }</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
